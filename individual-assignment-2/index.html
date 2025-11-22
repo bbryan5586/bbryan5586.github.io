@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-m">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Record Stop - Home</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        nav a.active {
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        /* Requirement 1: Flexbox Layout */
+        .featured-albums-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        /* Requirement 2: Hover effect */
+        .album-card {
+            width: 250px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .album-card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .album-card .album-info {
+            padding: 15px;
+        }
+
+        .album-card:hover {
+            transform: scale(1.05) translateY(10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        /* Bonus Requirement */
+        .album-card .hidden-info {
+            display: none;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .album-card:hover .hidden-info {
+            display: block;
+        }
+
+        /* Requirement 6: Footer */
+        footer {
+            background-color: #333;
+            color: #aaa;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+    
+	<nav style="background-color: #333; padding: 10px; text-align: center; margin-bottom: 20px;">
+		<a href="../index.html" style="color: white; text-decoration: none; font-family: sans-serif;">
+			&larr; Back to Main Portfolio
+		</a>
+	</nav>
+	
+    <header>
+        <!-- Requirement 5: Navigation -->
+        <nav>
+            <a href="index.html" class="logo">The Record Stop</a>
+            <div>
+                <a href="index.html" class="active">Home</a>
+                <a href="inventory.html">Inventory</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Featured Albums</h1>
+
+        <section class="featured-albums-container">
+            
+            <div class="album-card">
+                <img src="record1.jpg" alt="Vinyl record">
+                <div class="album-info">
+                    <h3>Cosmic Echoes</h3>
+                    <p>The Starlights</p>
+                    <div class="hidden-info">
+                        <p>Genre: Psychedelic Rock</p>
+                        <p>Released: 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="record2.jpg" alt="Vinyl record">
+                <div class="album-info">
+                    <h3>Midnight Drive</h3>
+                    <p>Synthwave Surfers</p>
+                    <div class="hidden-info">
+                        <p>Genre: Synthwave</p>
+                        <p>Released: 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="record3.jpg" alt="Vinyl record">
+                <div class="album-info">
+                    <h3>Urban Grooves</h3>
+                    <p>DJ Flow</p>
+                    <div class="hidden-info">
+                        <p>Genre: Lo-Fi Hip Hop</p>
+                        <p>Released: 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="record4.jpg" alt="Vinyl record">
+                <div class="album-info">
+                    <h3>Acoustic Mornings</h3>
+                    <p>Lena Miles</p>
+                    <div class="hidden-info">
+                        <p>Genre: Folk / Acoustic</p>
+                        <p>Released: 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="record5.jpg" alt="Vinyl record">
+                <div class="album-info">
+                    <h3>Electric Bloom</h3>
+                    <p>The Voltage</p>
+                    <div class="hidden-info">
+                        <p>Genre: Indie Rock</p>
+                        <p>Released: 2024</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Record Stop. All rights reserved.</p>
+        <p>123 Vinyl Ave, Music City, 54321</p>
+        <p>Contact us: <a href="mailto:info@recordstop.com">info@recordstop.com</a></p>
+    </footer>
+
+</body>
+</html>
+

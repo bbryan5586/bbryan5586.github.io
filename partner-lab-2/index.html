@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Lab 2: An interactive website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<nav style="background-color: #333; padding: 10px; text-align: center; margin-bottom: 20px;">
+		<a href="../index.html" style="color: white; text-decoration: none; font-family: sans-serif;">
+			&larr; Back to Main Portfolio
+		</a>
+	</nav>
+
+    <main>
+        <header>
+            <h1 id="greeting">Hello User</h1>
+            <p id="briefMessage">This is a default message.</p>
+        </header>
+
+        <div class="container">
+            <section id="customizer">
+                <h2>Customize Page</h2>
+                
+                <label for="nameInput">Your Name:</label>
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                
+                <label for="messageInput">Brief Message:</label>
+                <input type="text" id="messageInput" placeholder="Enter a brief message">
+                
+                <label for="bgColorSelect">Background Color:</label>
+                <select id="bgColorSelect">
+                    <option value="#f0f0f0">Light Gray</option>
+                    <option value="#333333">Dark Gray</option>
+                    <option value="#e6f2ff">Light Blue</option>
+                    <option value="#ffe6e6">Light Red</option>
+                </select>
+                
+                <button id="submitBtn">Apply Changes</button>
+            </section>
+
+            <section id="todo-section">
+                <h2>To-Do List</h2>
+                <div class="todo-input-container">
+                    <input type="text" id="todoInput" placeholder="Add a new to-do item">
+                    <button id="addTodoBtn">Add</button>
+                </div>
+                <ol id="todoList"></ol>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

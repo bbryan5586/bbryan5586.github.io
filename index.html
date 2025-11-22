@@ -3,64 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>My Web Development Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
+            background-color: #ffffff;
+            color: #333333;
             margin: 0;
-            padding: 10px;
+            padding: 0;
         }
+
+        header {
+            background-color: #333333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav {
+            margin-top: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+            color: #cccccc;
+        }
+
         .container {
-            background-color: white;
-            width: 95%;
-            max-width: 1200px;
+            width: 80%;
             margin: 0 auto;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #333;
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
         }
-        p {
-            color: #666;
-            font-size: 18px;
-            line-height: 1.5;
+
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
-        img {
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #999;
+            width: 300px;
+            background-color: white;
+            padding: 15px;
+        }
+
+        .card-image {
             width: 100%;
-            max-width: 90%;
-            height: auto;
-            border: 5px solid #ddd;
-            margin: 20px 0;
-            background-color: #eee;
-            min-height: 300px;
+            height: 150px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border: 1px solid #000;
         }
-        .footer-text {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #888;
+
+        .card-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #0056b3;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .card a:hover {
+            background-color: #004494;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: #eee;
+            border-top: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
 
+    <header>
+        <h1>My Web Development Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="https://github.com/bbryan5586" target="_blank">My GitHub</a>
+            <a href="mailto:bpb5586@psu.edu">Contact</a>
+        </nav>
+    </header>
+
     <div class="container">
-        <h1>Portfolio Coming Soon</h1>
         
-        <p>This is my WiP web development portfolio page. Here's a sneak peek of "Gourmet Corner", one of my previous works:</p>
-
-        <img src="gourmetcorner.png" alt="Gourmet Corner website">
-
-        <p>This page is hosted on GitHub Pages and InfinityFree.</p>
-
-        <div class="footer-text">
-            &copy; 2025 Brett Bryan
+        <div class="intro">
+            <p>This portfolio showcases the projects I've built while learning web development.</p>
         </div>
+
+        <h2 class="section-title">Practice Activities</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/activity1.png">
+                </div>
+                <h3>Practice Activity 1 - A very simple web page</h3>
+                <p>A simple webpage for the sale of comic books.</p>
+                <a href="./practice-activity-1/index.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/activity2.png">
+                </div>
+                <h3>Practice Activity 2 - CSS Transforms and Filters</h3>
+                <p>A webpage showcasing CSS filter and transform effects.</p>
+                <a href="./practice-activity-2/index.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/activity3.png">
+                </div>
+                <h3>Practice Activity 3 - Extending Bootstap starter examples</h3>
+                <p>A webpage showcasing a plant blog.</p>
+                <a href="./practice-activity-3/index.html">View Project</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Partner Labs</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/lab1.png">
+                </div>
+                <h3>Partner Lab 1 - A well-styled web site</h3>
+                <p>A futurisitc blog about intergalactic travel.</p>
+                <a href="./partner-lab-1/index.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/lab2.png">
+                </div>
+                <h3>Partner Lab 2 - An interactive website</h3>
+                <p>A simple webpage focused on interactivity from the viewer.</p>
+                <a href="./partner-lab-2/index.html">View Project</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Individual Assignments</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/assignment1.png">
+                </div>
+                <h3>Assignment 1 - Selling on the web</h3>
+                <p>A more refined version of the comic book selling webpage.</p>
+                <a href="./individual-assignment-1/index.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/assignment2.png">
+                </div>
+                <h3>Assignment 2 - The Record Store</h3>
+                <p>A record store webpage with multiple pages, showcasing fictional albums on vinyl.</p>
+                <a href="./individual-assignment-2/index.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="screenshots/assignment3.png">
+                </div>
+                <h3>Assignment 3 - The Responsive Restaurant</h3>
+                <p>A webpage showcasing a few dishes from a restaurant, each with their own descriptions.</p>
+                <a href="./individual-assignment-3/index.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    Coming Soon
+                </div>
+                <h3>Assignment 4 (Final)</h3>
+                <p>Final project - Coming Soon!</p>
+                <a href="./individual-assignment-4/index.html">View Project</a>
+            </div>
+        </div>
+
     </div>
+
+    <footer>
+        &copy; 2025 Brett Bryan
+    </footer>
 
 </body>
 </html>

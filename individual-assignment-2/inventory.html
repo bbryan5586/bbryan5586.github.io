@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-m">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Record Stop - Inventory</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        nav a.active {
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        
+        /* Requirement 3: Table */
+        .inventory-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .inventory-table thead {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .inventory-table th, .inventory-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        .inventory-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .inventory-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Requirement 6: Footer */
+        footer {
+            background-color: #333;
+            color: #aaa;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+    
+	<nav style="background-color: #333; padding: 10px; text-align: center; margin-bottom: 20px;">
+		<a href="../index.html" style="color: white; text-decoration: none; font-family: sans-serif;">
+			&larr; Back to Main Portfolio
+		</a>
+	</nav>
+	
+    <header>
+        <!-- Requirement 5: Navigation -->
+        <nav>
+            <a href="index.html" class="logo">The Record Stop</a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="inventory.html" class="active">Inventory</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Store Inventory</h1>
+
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>Artist Name</th>
+                    <th>Album Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Starlights</td>
+                    <td>Cosmic Echoes</td>
+                    <td>$29.99</td>
+                </tr>
+                <tr>
+                    <td>Synthwave Surfers</td>
+                    <td>Midnight Drive</td>
+                    <td>$27.50</td>
+                </tr>
+                <tr>
+                    <td>DJ Flow</td>
+                    <td>Urban Grooves</td>
+                    <td>$32.00</td>
+                </tr>
+                <tr>
+                    <td>Lena Miles</td>
+                    <td>Acoustic Mornings</td>
+                    <td>$24.99</td>
+                </tr>
+                <tr>
+                    <td>The Voltage</td>
+                    <td>Electric Bloom</td>
+                    <td>$28.99</td>
+                </tr>
+                <tr>
+                    <td>The Jazz Cats</td>
+                    <td>Alley Cat Blues</td>
+                    <td>$31.50</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Record Stop. All rights reserved.</p>
+        <p>123 Vinyl Ave, Music City, 54321</p>
+        <p>Contact us: <a href="mailto:info@recordstop.com">info@recordstop.com</a></p>
+    </footer>
+
+</body>
+</html>
+

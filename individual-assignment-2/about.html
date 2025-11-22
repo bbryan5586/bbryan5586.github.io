@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-m">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Record Stop - About Us</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        nav a.active {
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .about-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            line-height: 1.6;
+        }
+
+        /* Requirement 4: Float */
+        .store-image {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            width: 250px;
+            height: auto;
+            border: 3px solid #ccc;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Requirement 4: Positioning */
+        .staff-pick {
+            position: relative;
+            background-color: #e6f7ff;
+            border: 1px solid #b3e0ff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .staff-pick-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: #ff4136;
+            color: #fff;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 20px;
+            transform: rotate(10deg);
+        }
+
+        /* Requirement 6: Footer */
+        footer {
+            background-color: #333;
+            color: #aaa;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+    
+	<nav style="background-color: #333; padding: 10px; text-align: center; margin-bottom: 20px;">
+		<a href="../index.html" style="color: white; text-decoration: none; font-family: sans-serif;">
+			&larr; Back to Main Portfolio
+		</a>
+	</nav>
+	
+    <header>
+        <!-- Requirement 5: Navigation -->
+        <nav>
+            <a href="index.html" class="logo">The Record Stop</a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="inventory.html">Inventory</a>
+                <a href="about.html" class="active">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Our Store</h1>
+
+        <div class="about-container clearfix">
+            
+            <img src="recordstore.avif" 
+                 alt="Record collection inside of store"
+                 class="store-image">
+
+            <h2>Welcome to The Record Stop</h2>
+            <p>
+                Founded in 2010, The Record Stop has been the prime location to get your hands on vintage vinyls and new releases alike. We believe in the power of expression and emotion through the art of music.
+            </p>
+            <p>
+                Our collection is carefully curated by our team of dedicated music lovers, aiming to have as diverse of a stock as possible. From classic rock and roll to modern drum and bass, we have it all.
+            </p>
+            <p>
+                We are extremely passionate about connecting people with the music they love and identify with. Music, as an art, is powerful. We might just have the record for you. Give us a call, or come on over and look through our crates. We're always here to help and answer any questions you might have! See you soon!
+            </p>
+        </div>
+
+        <div class="staff-pick">
+            <span class="staff-pick-badge">HOT PICK!</span>
+            <h3>Staff Pick of the Week</h3>
+            <p><strong>Queen - A Night at the Opera</strong></p>
+            <p>"An absolute masterpiece from start to finish. 'Bohemian Rhapsody' is just the beginning!" - Alex</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Record Stop. All rights reserved.</p>
+        <p>123 Vinyl Ave, Music City, 54321</p>
+        <p>Contact us: <a href="mailto:info@recordstop.com">info@recordstop.com</a></p>
+    </footer>
+
+</body>
+</html>
+
+
