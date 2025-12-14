@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerabilities | Cybersecurity</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #3a86ff;
+            --secondary-dark: #212529;
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding-bottom: 70px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            margin: 0 5px;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        .page-section {
+            padding: 40px 15px;
+            max-width: 1100px;
+            margin: 0 auto;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .custom-table th {
+            background-color: #343a40;
+            color: white;
+            padding: 12px;
+        }
+
+        .custom-table td {
+            padding: 12px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .custom-table tr:hover {
+            background-color: #f1f3f5;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #212529;
+            color: #adb5bd;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.75rem; }
+            .navbar-brand { font-size: 1.2rem; }
+            .page-section { padding: 20px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+	<nav style="background-color: #333; padding: 10px; text-align: center; margin-bottom: 20px;">
+		<a href="../index.html" style="color: white; text-decoration: none; font-family: sans-serif;">
+			&larr; Back to Main Portfolio
+		</a>
+	</nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                The Importance of Cybersecurity
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="vulnerabilities.html">Vulnerabilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="defense.html">Defense</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="height: 60px;"></div>
+
+    <section id="cve" class="page-section">
+        <h2 class="text-center mb-4">Vulnerability Database (CVEs)</h2>
+        <p class="text-center text-muted mb-5">A breakdown of notable vulnerabilities that target either corporate entities, or everyday internet users like you. More of these are discovered every single day.</p>
+
+        <div class="mb-5">
+            <h3 class="border-bottom pb-2 mb-3" style="color: #d63384;">Consumer Risks (Personal Devices)</h3>
+            <p>These vulnerabilities target everyday technology like smartphones, laptops, and web browsers. They often rely on users clicking a bad link or opening a file.</p>
+            <div class="table-responsive">
+                <table class="custom-table table table-hover">
+                    <thead>
+                        <tr>
+                            <th>CVE ID</th>
+                            <th>Software</th>
+                            <th>Severity (CVSS)</th>
+                            <th>Impact on You</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-38831" target="_blank">CVE-2023-38831</a></td>
+                            <td>WinRAR</td>
+                            <td class="text-danger fw-bold">7.8 (High)</td>
+                            <td>Hackers can hide malware inside ZIP files that look like harmless images.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-41064" target="_blank">CVE-2023-41064</a></td>
+                            <td>Apple iOS & macOS</td>
+                            <td class="text-danger fw-bold">9.8 (Critical)</td>
+                            <td>Zero-click exploit allowing spyware to be installed via iMessage images.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-4863" target="_blank">CVE-2023-4863</a></td>
+                            <td>Google Chrome / WebP</td>
+                            <td class="text-danger fw-bold">8.8 (High)</td>
+                            <td>Opening a malicious image on a website could instantly compromise your browser.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-21413" target="_blank">CVE-2024-21413</a></td>
+                            <td>Microsoft Outlook</td>
+                            <td class="text-danger fw-bold">9.8 (Critical)</td>
+                            <td>Critical bug allows code execution just by previewing an email.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-0519" target="_blank">CVE-2024-0519</a></td>
+                            <td>Google Chrome V8</td>
+                            <td class="text-danger fw-bold">8.8 (High)</td>
+                            <td>Attackers can crash your browser or run code by luring you to a bad website.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-30051" target="_blank">CVE-2024-30051</a></td>
+                            <td>Windows 10/11 DWM</td>
+                            <td class="text-danger fw-bold">7.8 (High)</td>
+                            <td>Malware already on your PC can use this to gain full Administrator control.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-23397" target="_blank">CVE-2023-23397</a></td>
+                            <td>Microsoft Outlook</td>
+                            <td class="text-danger fw-bold">9.8 (Critical)</td>
+                            <td>Zero-click exploit that steals your password hash just by receiving an email.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-4671" target="_blank">CVE-2024-4671</a></td>
+                            <td>Google Chrome</td>
+                            <td class="text-danger fw-bold">8.8 (High)</td>
+                            <td>Use-after-free bug allowing hackers to take over your browser session.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-38021" target="_blank">CVE-2024-38021</a></td>
+                            <td>Microsoft Office</td>
+                            <td class="text-danger fw-bold">8.8 (High)</td>
+                            <td>Opening a trusted-looking Office document can run malicious code.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-27815" target="_blank">CVE-2024-27815</a></td>
+                            <td>Apple iOS & macOS</td>
+                            <td class="text-danger fw-bold">7.8 (High)</td>
+                            <td>Malicious apps can crash the system or write data to kernel memory.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="border-bottom pb-2 mb-3" style="color: #3a86ff;">Enterprise Risks (Corporate Infrastructure)</h3>
+            <p>These target the servers and software that companies run. When these are breached, massive amounts of customer data can be stolen.</p>
+            <div class="table-responsive">
+                <table class="custom-table table table-hover">
+                    <thead>
+                        <tr>
+                            <th>CVE ID</th>
+                            <th>System Name</th>
+                            <th>Severity (CVSS)</th>
+                            <th>Technical Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-21887" target="_blank">CVE-2024-21887</a></td>
+                            <td>Ivanti Connect Secure</td>
+                            <td class="text-danger fw-bold">9.1 (Critical)</td>
+                            <td>Command Injection (RCE) in VPNs</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-34362" target="_blank">CVE-2023-34362</a></td>
+                            <td>MOVEit Transfer</td>
+                            <td class="text-danger fw-bold">9.8 (Critical)</td>
+                            <td>SQL Injection (Mass Data Theft)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-3400" target="_blank">CVE-2024-3400</a></td>
+                            <td>Palo Alto Firewalls</td>
+                            <td class="text-danger fw-bold">10.0 (Critical)</td>
+                            <td>Unauthenticated Command Injection</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228" target="_blank">CVE-2021-44228</a></td>
+                            <td>Apache Log4j</td>
+                            <td class="text-danger fw-bold">10.0 (Critical)</td>
+                            <td>Remote Code Execution (JNDI Injection)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-20198" target="_blank">CVE-2023-20198</a></td>
+                            <td>Cisco IOS XE</td>
+                            <td class="text-danger fw-bold">10.0 (Critical)</td>
+                            <td>Privilege Escalation via Web UI</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-4966" target="_blank">CVE-2023-4966</a></td>
+                            <td>Citrix NetScaler</td>
+                            <td class="text-danger fw-bold">9.4 (Critical)</td>
+                            <td>Session Token Leak & Hijacking</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-1709" target="_blank">CVE-2024-1709</a></td>
+                            <td>ConnectWise ScreenConnect</td>
+                            <td class="text-danger fw-bold">10.0 (Critical)</td>
+                            <td>Authentication Bypass (Remote Admin Access)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-6387" target="_blank">CVE-2024-6387</a></td>
+                            <td>OpenSSH</td>
+                            <td class="text-danger fw-bold">8.1 (High)</td>
+                            <td>Race Condition leading to RCE on Linux</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-40766" target="_blank">CVE-2024-40766</a></td>
+                            <td>SonicWall Gen 5/6/7</td>
+                            <td class="text-danger fw-bold">9.3 (Critical)</td>
+                            <td>Improper Access Control (Firewall Bypass)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-4577" target="_blank">CVE-2024-4577</a></td>
+                            <td>PHP for Windows</td>
+                            <td class="text-danger fw-bold">9.8 (Critical)</td>
+                            <td>CGI Argument Injection (RCE)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="m-0">&copy; 2025 Brett Bryan.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
